@@ -1,0 +1,14 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Базы данных
+body
+  h1 Базы данных
+  form(action='/task-create' method='POST')
+    h4 Название
+    input(name='title')
+    h4 Описание
+    textarea(name='description')
+    div
+      button Создать

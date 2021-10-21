@@ -1,0 +1,15 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Базы данных
+body
+  h1 Базы данных
+  form(action='/task-update' method='POST')
+    input(name='id' type='hidden' value=task.id)
+    h4 Название
+    input(name='title' value=task.title)
+    h4 Описание
+    textarea(name='description')= task.description
+    div
+      button Обновить
